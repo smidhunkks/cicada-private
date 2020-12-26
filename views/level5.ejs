@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+
+    <style>
+      @font-face {
+        font-family: "typewriter";
+        src: url("typewriter.otf");
+      }
+      body {
+        font-family: "typewriter";
+        background-color: #101820;
+        color: #fee715;
+      }
+
+      /*👇 for preload play/pause svg 😎*/
+      /* body:after {
+        position: absolute;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        z-index: -1;
+        content: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/163884/play.svg)
+          url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/163884/pause.svg);
+      } */
+    </style>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <div class="col-lg-12 col-12 text-center mb-5">
+          <h2 class="mt-5" data-aos="fade-up">CICADA - End is near</h2>
+          <div class="m-5">
+            <h3>Audio</h3>
+            <time>play now</time>
+          </div>
+
+          <form action="/end-is-near/anser" method="GET">
+            <div class="form-group">
+              <label>Answer</label>
+              <input
+                name="answer"
+                type="text"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Answer"
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >We'll never share your email with anyone else.</small
+              >
+            </div>
+
+            <button type="submit" class="btn btn-warning">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

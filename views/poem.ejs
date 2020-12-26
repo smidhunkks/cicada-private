@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Everything is Now</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <style>
+      @font-face {
+        font-family: "typewriter";
+        src: url("typewriter.otf");
+      }
+      body {
+        font-family: "typewriter";
+        background-color: #101820;
+        color: #fee715;
+      }
+      .poem span {
+        font-weight: 900;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-12 text-center mb-5">
+            <h2 class="mt-5" data-aos="fade-up">CICADA - Level 1</h2>
+          </div>
+
+          <div
+            class="col-lg-12 col-12 text-center"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="class-thumb">
+              <!-- <img width="400" src="qrcode.png" class="img-fluid" alt="Class" /> -->
+
+              <div class="class-info">
+                <h3 class="mb-1 text-decoration-underline">Ozymandias</h3>
+
+                <!-- <span><strong>Trained by</strong> - Bella</span> -->
+
+                <p class="poem mt-3">
+                  I met a travell<span>e</span>r from an antique
+                  <span>l</span>and,<br />Who said—“Tw<span>o</span> vast and
+                  trunkless legs of stone<br />Stand in the desert. . . . Near
+                  them, on the sand,<br />Half s<span>u</span>nk a shattered
+                  visage lies, whose frown,<br />And wrinkled lip, and sneer of
+                  cold command,<br />Tell that its sculptor well
+                  <span>t</span>hose passions read<br />Which yet
+                  su<span>r</span>vive, stamped on these l<span>i</span>feless
+                  things,<br />The hand that mocked them, and the heart that
+                  fed;<br />And on the pedestal, these words appear:<br />My
+                  name is <span>O</span>zymandias, King of Kings;<br />Look on
+                  my Works, ye Mighty, and despair!<br /><span>N</span>othing
+                  beside remains. Round the decay <br />Of that colossal Wreck,
+                  boundless and bare<br />The lone and level sands stretch far
+                  away.
+                </p>
+              </div>
+            </div>
+            <hr class="my-4" />
+            <form action="/94fd1a71-b7fb" method="POST">
+              <div class="form-group">
+                <label>Answer</label>
+                <input
+                  name="answer1"
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Answer"
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  >Analyze the page and answer here</small
+                >
+              </div>
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <%if (error==700) { %>
+            <div>Wrong anwser</div>
+            <% } %> <%if (status==200) { %>
+            <div>Correct</div>
+            <% } %>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

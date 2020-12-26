@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+
+    <style>
+      @font-face {
+        font-family: "typewriter";
+        src: url("typewriter.otf");
+      }
+      body {
+        font-family: "typewriter";
+        background-color: #101820;
+        color: #fee715;
+      }
+
+      /*👇 for preload play/pause svg 😎*/
+      /* body:after {
+        position: absolute;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        z-index: -1;
+        content: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/163884/play.svg)
+          url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/163884/pause.svg);
+      } */
+    </style>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-12 text-center mb-5">
+            <h2 class="mt-5" data-aos="fade-up">CICADA - Level 4</h2>
+          </div>
+
+          <div
+            class="col-lg-12 col-12 text-center"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="class-thumb">
+              <!-- <img width="400" src="qrcode.png" class="img-fluid" alt="Class" /> -->
+
+              <div class="class-info">
+                <h3 class="mb-1 text-decoration-underline">Solve the riddle</h3>
+
+                <!-- <span><strong>Trained by</strong> - Bella</span> -->
+
+                <p class="riddle mt-3">
+                  With bones beneath the ground <br />
+                  the masses lent an ear. <br />
+                  His strength and calibre brought to him,<br />
+                  both a country's unity and <br />
+                  a knife to bleed his heart.
+                </p>
+              </div>
+            </div>
+            <hr class="my-4" />
+            <form action="/94fd1a71-b7fb" method="POST">
+              <div class="form-group">
+                <label>Answer</label>
+                <input
+                  name="answer1"
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Answer"
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  >Solve the riddle and answer here</small
+                >
+              </div>
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
